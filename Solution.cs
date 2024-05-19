@@ -16,7 +16,7 @@ public class Solution
                 int x = queries[i][0] - point[0];
                 int y = queries[i][1] - point[1];
 
-                if (pointIsInCircle(x, y, radius))
+                if (PointIsInCircle(x, y, radius))
                 {
                     ++pointsPerCircle[i];
                 }
@@ -26,7 +26,7 @@ public class Solution
         return pointsPerCircle;
     }
 
-    private bool pointIsInCircle(int x, int y, int radius)
+    private bool PointIsInCircle(int x, int y, int radius)
     {   // Alternatively:
         // Math.Pow(x, 2) + Math.Pow(y, 2) <= Math.Pow(radius, 2);
         return (x * x) + (y * y) <= radius * radius;
