@@ -1,5 +1,4 @@
 
-#include <cmath>
 #include <vector>
 using namespace std;
 
@@ -27,7 +26,8 @@ public:
 
 private:
     bool pointIsInCircle(int x, int y, int radius) const {
-        // Alternatively:
+        // Alternatively: 
+        // #include <cmath>
         // pow(x, 2) + pow(y, 2) <= pow(radius, 2)
         return (x*x) + (y*y) <= radius*radius;
     }
